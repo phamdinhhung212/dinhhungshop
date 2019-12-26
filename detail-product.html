@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>product detail</title>
+    <link rel="stylesheet" href="css/style-detail-product.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/main-js.js"></script>
+    <script type="text/javascript" src="js/product-js__.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="wp-inner clearfix">
+                <a href="#" class="logo fl-left">
+                    <img src="images/logo/logomain.png" alt="logo" title="logo">
+                </a>
+                <ul id="main-menu" class="fl-left">
+                    <li><a href="home.html">
+                        <span>trang chủ</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span>sản phẩm</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span>liên hệ</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span>tài khoảng</span>
+                    </a></li>
+                    <li><a href="admin.html">
+                        <span>admin</span>
+                    </a></li>
+                </ul>
+                <form action="search" class="search-box fl-left">
+                    <span class="icon-search fa fa-search" title="Tìm kiếm"></span>
+                    <input type="text" name="search" class="search-text" placeholder="Tìm kiếm">
+                    <input type="submit" value=" " name="search" class="sm-search">
+                </form>
+                <!-- basket -->
+                <div class="basket-box fl-right">
+                    <span class="basket-product clearfix" title="giỏ hàng">
+                        <i class="fa fa-shopping-basket icon-basket fl-left" aria-hidden="true"></i>
+                        <span class="cart-cout fl-right" title="0">0</span>
+                    </span>
+                    <div class="information-basket">
+                        <div class="widget">
+                            <span class="close-basket" title="Đóng giỏ hàng">
+                                <i class="fa fa-times-circle icon-close" aria-hidden="true"></i>
+                            </span>
+                            <div class="widget-head">
+                                <h2>Thông Tin Giỏ Hàng</h2>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-basket">
+                                    <li class="clearfix">
+                                        <a href="#" class="fl-left">
+                                            <img src="" title="sản phẩm 1" alt="">
+                                        </a>
+                                        <div class="information-basic-basket">
+                                            <p>Tên sản phẩm: <span class="product-name"></span></p>
+                                            <p>Giá sản phẩm: <span class="product-price 1"></span></p>
+                                        </div>
+                                        <span class="delete-basket fl-left" title="xóa sản phẩm">
+                                            <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="fl-left">
+                                            <img src="" title="sản phẩm 2" alt="">
+                                        </a>
+                                        <div class="information-basic-basket">
+                                            <p>Tên sản phẩm: <span class="product-name"></span></p>
+                                            <p>Giá sản phẩm: <span class="product-price 2"></span></p>
+                                        </div>
+                                        <span class="delete-basket fl-left" title="xóa sản phẩm">
+                                            <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="fl-left" class="images-product">
+                                            <img src="" title="sản phẩm 3" alt="">
+                                        </a>
+                                        <div class="information-basic-basket">
+                                            <p>Tên sản phẩm: <span class="product-name"></span></p>
+                                            <p>Giá sản phẩm: <span class="product-price 3"></span></p>
+                                        </div>
+                                        <span class="delete-basket fl-left" title="xóa sản phẩm">
+                                            <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="fl-left">
+                                            <img src="" title="sản phẩm 4" alt="">
+                                        </a>
+                                        <div class="information-basic-basket">
+                                            <p>Tên sản phẩm: <span class="product-name"></span></p>
+                                            <p>Giá sản phẩm: <span class="product-price 4"></span></p>
+                                        </div>
+                                        <span class="delete-basket fl-left" title="xóa sản phẩm">
+                                            <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="fl-left">
+                                            <img src="" title="sản phẩm 5" alt="">
+                                        </a>
+                                        <div class="information-basic-basket">
+                                            <p>Tên sản phẩm: <span class="product-name"></span></p>
+                                            <p>Giá sản phẩm: <span class="product-price 5"></span></p>
+                                        </div>
+                                        <span class="delete-basket fl-left" title="xóa sản phẩm">
+                                            <i class="fa fa-times icon-delete" aria-hidden="true"></i>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="delete-all" title="xóa toàn bộ">
+                                    <p class="delete">Xóa toàn bộ</p>
+                                </div>
+                                <div class="pay">
+                                    <p>Tổng tiền: <span class="total-money">0</span>đ</p>
+                                    <span class="btn-pay">
+                                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                        <span>thanh toán</span>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end basket -->
+            </div>
+        </div>
+        <!-- end header -->
+        
+        <!-- wp-content -->
+        <div id="wp-content">
+            <div class="wp-inner clearfix">
+                <div id="sidebar" class="fl-left">
+                    <div class="shop-products">
+                        <h2 class="title">Các sản phẩm</h2>
+                        <ul class="list-products">
+                            <li><a href="">1. Áo thun nam</a></li>
+                            <li><a href="">2. Áo khoát nam</a></li>
+                            <li><a href="">3. Áo thun nữ</a></li>
+                            <li><a href="">4. Áo khoát nữ</a></li>
+                            <li><a href="">5. Quần âu nam</a></li>
+                            <li><a href="">6. Áo âu nam</a></li>
+                            <li><a href="">7. Nón thời trang</a></li>
+                            <li><a href="">8. Đồ bơi</a></li>
+                            <li><a href="">9. Áo khoát nữ</a></li>
+                            <li><a href="">10. Áo thun nam</a></li>
+                            <li><a href="">11. Áo khoát nam</a></li>
+                            <li><a href="">12. Áo thun nữ</a></li>
+                            <li><a href="">13. Áo khoát nữ</a></li>
+                            <li><a href="">14. Quần âu nam</a></li>
+                            <li><a href="">15. Áo âu nam</a></li>
+                            <li><a href="">16. Nón thời trang</a></li>
+                            <li><a href="">17. Đồ bơi</a></li>
+                            <li><a href="">18. Áo khoát nữ</a></li>
+                            <li><a href="">19. Đồ bơi</a></li>
+                            <li><a href="">20. Áo khoát nữ</a></li>
+                            <li><a href="">21. Áo thun nam</a></li>
+                            <li><a href="">22. Áo khoát nam</a></li>
+                            <li><a href="">23. Áo thun nữ</a></li>
+                            <li><a href="">24. Áo khoát nữ</a></li>
+                            <li><a href="">25. Quần âu nam</a></li>
+                            <li><a href="">26. Áo âu nam</a></li>
+                            <li><a href="">27. Nón thời trang</a></li>
+                            <li><a href="">28. Đồ bơi</a></li>
+                            <li><a href="">29. Áo khoát nữ</a></li>
+                            <li><a href="">30. Áo thun nam</a></li>
+                            <li><a href="">31. Áo khoát nam</a></li>
+                            <li><a href="">32. Áo thun nữ</a></li>
+                            <li><a href="">33. Áo khoát nữ</a></li>
+                            <li><a href="">34. Quần âu nam</a></li>
+                            <li><a href="">35. Áo âu nam</a></li>
+                            <li><a href="">36. Nón thời trang</a></li>
+                            <li><a href="">37. Đồ bơi</a></li>
+                            <li><a href="">38. Áo khoát nữ</a></li>
+                            <li><a href="">39. Đồ bơi</a></li>
+                            <li><a href="">40. Áo khoát nữ</a></li>
+                            <li><a href="">41. Áo thun nam</a></li>
+                            <li><a href="">42. Áo khoát nam</a></li>
+                            <li><a href="">43. Áo thun nữ</a></li>
+                            <li><a href="">44. Áo khoát nữ</a></li>
+                            <li><a href="">45. Quần âu nam</a></li>
+                            <li><a href="">46. Áo âu nam</a></li>
+                            <li><a href="">47. Nón thời trang</a></li>
+                            <li><a href="">48. Đồ bơi</a></li>
+                            <li><a href="">49. Áo khoát nữ</a></li>
+                            <li><a href="">50. Áo thun nam</a></li>
+                            <li><a href="">51. Áo thun nam</a></li>
+                            <li><a href="">52. Áo khoát nam</a></li>
+                            <li><a href="">53. Áo thun nữ</a></li>
+                            <li><a href="">54. Áo khoát nữ</a></li>
+                            <li><a href="">55. Quần âu nam</a></li>
+                            <li><a href="">56. Áo âu nam</a></li>
+                            <li><a href="">57. Nón thời trang</a></li>
+                            <li><a href="">58. Đồ bơi</a></li>
+                            <li><a href="">59. Áo khoát nữ</a></li>
+                            <li><a href="">60. Áo thun nam</a></li>
+                            <li><a href="">61. Áo thun nam</a></li>
+                            <li><a href="">62. Áo khoát nam</a></li>
+                            <li><a href="">63. Áo thun nữ</a></li>
+                            <li><a href="">64. Áo khoát nữ</a></li>
+                            <li><a href="">65. Quần âu nam</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content" class="fl-right">
+                    <!-- banner -->
+                    <div id="banner">
+                    <!-- --------------- -->
+                        <div class="slide-box">
+                            <div class="list-slide">
+                                <div class="slide active"><img src="images/images/1.jpg" alt="images 1"></div>
+                                <div class="slide"><img src="images/images/2.jpg" alt="images 1"></div>
+                                <div class="slide"><img src="images/images/3.jpg" alt="images 1"></div>
+                                <div class="slide"><img src="images/images/4.jpg" alt="images 1"></div>
+                            </div>
+                            <div class="btn-slide">
+                                <span class="btn-prev-banner fa fa fa-chevron-left"></span>
+                                <span class="btn-next-banner fa fa-chevron-right"></span>
+                                <ul>
+                                    <li class="active-li"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- --------------------- -->
+                    </div>
+                    <!-- end banner -->
+                    <!-- widget category -->
+                    <div class="widget category">
+                        <div class="widget-head">
+                            <h2>Sản Phẩm</h2>
+                        </div>
+                        <div class="widget-content">
+                            <ul class="list-cate clearfix">
+                                <li><a href="#">đồ nam</a></li>
+                                <li><a href="#">đồ nữ</a></li>
+                                <li><a href="#">áo khoác</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- next page -->
+                    <div class="next-page">
+                        <ul class="list-next-page clearfix">
+                            <li class="fl-left">home</li>
+                            <li class="fl-left fa fa-angle-right"></li>
+                            <li class="fl-left">chi tiết sản phẩm</li>
+                        </ul>
+                    </div>
+                    <!-- end next page -->
+                    <!-- end widget category -->
+                    <div class="detail-product">
+                        <!-- -------------------------------- -->
+                        <div id="product-img" class="clearfix">
+                            <div class="list-thumbnails fl-left">
+                                <ul class="list-thumb">
+                                    <li><img src="images/product-1/do/1.jpg" alt=""></li>
+                                    <li><img src="images/product-1/do/2.jpg" alt=""></li>
+                                    <li><img src="images/product-1/do/3.jpg" alt=""></li>
+                                    <li><img src="images/product-1/do/4.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="cover-images fl-left">
+                                <img src="images/product-1/do/1.jpg" alt="" title="">
+                            </div>
+                            <div class="product-cart fl-right">
+                                <div class="product-box">
+                                    <h2 class="product-name">Áo Thun Nam Zakado Cổ Tròn Cao Cấp N1</h2>
+                                </div>
+                                <div class="product-information">
+                                    <p class="price">Giá: <strong class="result-price">250.000đ </strong><span class="price-odd">350.000 đ</span></p>
+                                    <div class="box-color-product">
+                                        <p>chọn màu sắc: <span class="your-color"></span></p>
+                                        <ul class="list-color clearfix">
+                                            <li class="fl-left">Đỏ mận</li>
+                                            <li class="fl-left">Hồng đất</li class="fl-left">
+                                            <li class="fl-left">Vàng bò</li class="fl-left">
+                                            <li class="fl-left">Xanh vỏ đỗ</li class="fl-right">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="detail-information">
+                                    <ul class="list-information">
+                                        <li>Tên sản phẩm: <span>Áo Thun Nam Zakado Cổ Tròn Cao Cấp</span></li>
+                                        <li>Màu: <span>đỏ mận, hồng đất, vàng bò, xanh vỏ đỗ</span></li>
+                                        <li>Thành phần: <span>vãi, màu nhuộm ...</span></li>
+                                        <li>Size: <span>M - L - XL - 2XL - 3XL</span></li>
+                                        <li>Xuất xứ: <span>Việt Nam</span></li>
+                                    </ul>
+                                </div>
+                                <div id="start-pay">
+                                    <button class="bt-to-cart">
+                                        <i class="fa fa-shopping-basket icon-cart" aria-hidden="true"></i>
+                                        chọn mua
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------------------------- -->
+                    </div>
+                    <!-- show product detail -->
+                    <!-- //////////////////////////////////// -->
+                    <div class="product-detail">
+                        <div class="hide-after clearfix">
+                            <span class="close-hide fl-right">
+                                <i class="fa fa-times-circle icon-close" aria-hidden="true" title="Đóng"></i>
+                            </span>
+                            <!-- banner product -->
+                            <div class="list-cover-images">
+                                <div class="list-slide">
+                                    <div class="cover-images_ out active-product">
+                                        <img src="images/product-1/do/1.jpg" alt="">
+                                    </div>   
+                                    <div class="cover-images_ out">
+                                        <img src="images/product-1/do/2.jpg" alt="">
+                                    </div>  
+                                    <div class="cover-images_ out">
+                                        <img src="images/product-1/do/3.jpg" alt="">
+                                    </div>  
+                                    <div class="cover-images_ out">
+                                        <img src="images/product-1/do/4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end banner product -->
+                            <div class="check-views">
+                                <p class="detailed-views">Số lược xem chi tiết: <strong class="result">0</strong></p>
+                            </div>
+                            <div class="list-product-child">
+                                <ul class="list-thumb-out">
+                                    <li class="active-li"><img src="images/product-1/do/1.jpg" alt=""></li>
+                                    <li><img src="images/product-1/do/2.jpg" alt=""></li>
+                                    <li><img src="images/product-1/do/3.jpg" alt=""></li>
+                                    <li><img src="images/product-1/do/4.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="btn-slider">
+                                <span class="btn-prev-product" title="hình trước">
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                    <p>hình trước</p>
+                                </span>
+                                <span class="btn-next-product" title="hình sau">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    <p>hình sau</p>
+                                </span>
+                            </div>
+                            <div class="information-product-more clearfix">
+                                <h2 class="name-product">Áo Thun Nam Zakado Cổ Tròn Cao Cấp N1</h2>
+                                <div class="information-basic fl-left">
+                                    <h3 class="text-center">Thông tin cơ bản</h3>
+                                    <ul class="list-information">
+                                        <li>Tên sản phẩm: <span></span></li>
+                                        <li>Màu: <span></span></li>
+                                        <li>Thành phần: <span></span></li>
+                                        <li>Size: <span></span></li>
+                                        <li>Xuất xứ: <span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="table-size fl-left">
+                                    <h3 class="text-center">Chọn size phù hợp</h3>
+                                    <table border="2" cellpadding="2" cellspacing="10" class="selection-size">
+                                        <thead>
+                                            <tr>
+                                                <td>Số KG/người</td>
+                                                <td>Dưới 1m68</td>
+                                                <td>1m68 - 1m74</td>
+                                                <td>1m75 - 1m80</td>
+                                                <td>Trên 1m80</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dưới 53kg</td>
+                                                <td>S</td>
+                                                <td>M</td>
+                                                <td>M</td>
+                                                <td>L</td>
+                                            </tr>
+                                            <tr>
+                                                <td>53kg - 60KG</td>
+                                                <td>S/M</td>
+                                                <td>M/L</td>
+                                                <td>L/XL</td>
+                                                <td>XL</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trên 60KG</td>
+                                                <td>M</td>
+                                                <td>L/XL</td>
+                                                <td>XL</td>
+                                                <td>XXL</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+                                <div class="contact fl-right">
+                                    <h3 class="text-center">Thông tin liên lạc</h3>
+                                    <ul class="list-contact">
+                                        <li class="title">Phone: <span class="phone-ct">038.5763.717</span></li>
+                                        <li class="title">E-mail: <span class="email-ct">phamdinhhung212@gmail.com</span></li>
+                                        <li class="title">Address: <span class="address-ct">Kà Rôm - Công Hải - thuận bắc - Ninh Thuận</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //////////////////////////////////// -->
+                    <!-- end show product -->
+                    <!-- other product -->
+        <div class="other-products">
+            <h2>Sản Phẩm Khác</h2>
+            <!-- all product -->
+                    <div class="all-product">
+                        <!-- widget product 1-->
+                        <div class="widget product">
+                            <div class="widget-head">
+                                <h2>Áo thời trang</h2>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-product clearfix">
+                                    <!-- product of clothes 1 -->
+                                    <li>
+                                        <span class="discount">-20%</span>
+                                        <a href="detail-product.html">
+                                            <img src="images/product-1/img-1/blue/3.jpg" alt="Áo Thun Nam Zakado Cổ Tròn Cao Cấp N1">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">250.000 đ</p>
+                                            <p class="old-price">350.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-1/img-1/blue/3.jpg" alt=""></li>
+                                                <li><img src="images/product-1/img-1/blue/2.jpg" alt=""></li>
+                                                <li><img src="images/product-1/img-1/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-1/img-1/blue/3.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 1 -->
+                                    <!-- product of clothes 2 -->
+                                    <li>
+                                        <span class="discount">-30%</span>
+                                        <a href="detail-product.html">
+                                            <img src="images/product-1/img-2/white/1.jpg" alt="áo thun nam nhập khẩu từ hàn quốc">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">300.000 đ</p>
+                                            <p class="old-price">400.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-1/img-2/white/1.jpg" alt=""></li>
+                                                <li><img src="images/product-1/img-2/white/2.jpg" alt=""></li>
+                                                <li><img src="images/product-1/img-2/white/3.jpg" alt=""></li>
+                                                <li><img src="images/product-1/img-2/white/4.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 2 -->
+                                    <!-- product of clothes 3 -->
+                                    <li>
+                                        <span class="discount">-40%</span>
+                                        <a href="detail-product.html">
+                                            <img src="images/product-1/img-3/black/1.jpg" alt="áo thun nam chất lượng cao mang thương hiệu quốc tế">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">400.000 đ</p>
+                                            <p class="old-price">550.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li>
+                                                    <img src="images/product-1/img-3/black/1.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="images/product-1/img-3/red/1.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="images/product-1/img-3/white/1.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="images/product-1/img-3/white/1.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 3 -->
+                                    <!-- product of clothes 4 -->
+                                    <li>
+                                        <span class="discount">-50%</span>
+                                        <a href="detail-product.html">
+                                            <img src="images/product-1/img-4/white/1.jpg" alt="Áo Thun Nam Dài Tay Zakado APTO001 Cao Cấp 9 Màu Cơ Bản">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li>
+                                                    <img src="images/product-1/img-4/white/1.jpg" alt="">   
+                                                </li>
+                                                <li>
+                                                    <img src="images/product-1/img-4/white/2.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="images/product-1/img-4/white/3.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="images/product-1/img-4/white/3.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 4 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end widget product 1-->
+                        <!-- widget product 2 -->
+                        <div class="widget product">
+                            <div class="widget-head">
+                                <h2>Quần thời trang</h2>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-product clearfix">
+                                    <!-- product of clothes 1 -->
+                                    <li>
+                                        <span class="discount">-20%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-2/img-1/black/1.jpg" alt="Quần Jogger Nam Ống Bó Thời Trang Hàn Quốc JOGGER04">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-2/img-1/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-1/white/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-1/white/2.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-1/white/3.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 1 -->
+                                    <!-- product of clothes 2 -->
+                                    <li>
+                                        <span class="discount">-30%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-2/img-2/black/2.jpg" alt="Áo Thun Nam In Hình Paris Everest AokNAM418 (Trắng)">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-2/img-2/black/2.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-2/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-2/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-2/black/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 2 -->
+                                    <!-- product of clothes 3 -->
+                                    <li>
+                                        <span class="discount">-40%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-2/img-3/black/1.jpg" alt="Áo Thun Polo Nam Cá Sấu Dony">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-2/img-3/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-3/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-3/yellow/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-3/yellow/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 3 -->
+                                    <!-- product of clothes 4 -->
+                                    <li>
+                                        <span class="discount">-50%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-2/img-4/blue/1.jpg" alt="Áo Thun Nam In Chữ Travel Everest AoKNAM12 (Trắng)">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-2/img-4/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-4/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-4/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-2/img-4/blue/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 4 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end widget product 2 -->
+                        <!-- widget product 3 -->
+                        <div class="widget product">
+                            <div class="widget-head">
+                                <h2>Áo khoát thời trang</h2>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-product clearfix">
+                                    <!-- product of clothes 1 -->
+                                    <li>
+                                        <span class="discount">-20%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-3/img-1/black/1.jpg" alt="ÁO KHOÁC HOODIE EASNJ MẪU MỚI PHNG CÁCH HÀN QUỐC">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-3/img-1/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-1/red/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-1/white/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-1/yellow/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 1 -->
+                                    <!-- product of clothes 2 -->
+                                    <li>
+                                        <span class="discount">-30%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-3/img-2/red/1.jpg" alt="ÁO KHOÁC NHẸ NAM DXPECHER IN HÌNH HỌA TIẾT">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-3/img-2/red/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-2/red/2.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-2/red/3.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-2/white/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 2 -->
+                                    <!-- product of clothes 3 -->
+                                    <li>
+                                        <span class="discount">-40%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-3/img-3/black/1.jpg" alt="ÁO KHOÁC HOODIE HỌA TIẾT RỒNG LỬA SIÊU ĐẸP">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-3/img-3/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-3/white/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-3/yellow/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-3/yellow/2.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 3 -->
+                                    <!-- product of clothes 4 -->
+                                    <li>
+                                        <span class="discount">-50%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-3/img-4/black/1.jpg" alt="ÁO KHOÁC HOODIE EASNJ MẪU MỚI PHNG CÁCH HÀN QUỐC">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-3/img-4/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-4/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-4/pink/1.jpg" alt=""></li>
+                                                <li><img src="images/product-3/img-4/yellow/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of clothes 4 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end widget product 3 -->
+                        <!-- widget product 4 -->
+                        <div class="widget product">
+                            <div class="widget-head">
+                                <h2>Giày thời trang</h2>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-product clearfix">
+                                    <!-- product of 1 -->
+                                    <li>
+                                        <span class="discount">-20%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-4/img-1/black/1.jpg" alt="áo thun nam nhập khẩu từ hàn quốc">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-4/img-1/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-1/black/2.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-1/black/3.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-1/black/4.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of 1 -->
+                                    <!-- product of 2 -->
+                                    <li>
+                                        <span class="discount">-30%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-4/img-2/pink/1.jpg" alt="áo thun nam chất lượng cao mang thương hiệu quốc tế">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-4/img-2/pink/1.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-2/pink/2.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-2/pink/3.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-2/pink/4.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of 2 -->
+                                    <!-- product of 3 -->
+                                    <li>
+                                        <span class="discount">-40%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-4/img-3/yellow/1.jpg" alt="Giày Thể Thao Nam Biti’s Hunter X – 2K18 – DSUH00500DEN - Midnight Black II">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-4/img-3/yellow/1.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-3/yellow/2.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-3/yellow/3.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-3/yellow/4.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of 3 -->
+                                    <!-- product of 4 -->
+                                    <li>
+                                        <span class="discount">-50%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-4/img-4/white/1.jpg" alt="áo nỉ cao cấp (hàng nhập khẩu)">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-4/img-4/white/1.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-4/white/2.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-4/white/3.jpg" alt=""></li>
+                                                <li><img src="images/product-4/img-4/white/4.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product of 4 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end widget product 4 -->
+                        <!-- widget product 5 -->
+                        <div class="widget product">
+                            <div class="widget-head">
+                                <h2>Dép thời trang</h2>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-product clearfix">
+                                    <!-- product 1 -->
+                                    <li>
+                                        <span class="discount">-20%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-5/img-1/black/1.jpg" alt="áo thun nam nhập khẩu từ hàn quốc">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-5/img-1/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-1/pink/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-1/pink/2.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-1/white/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 1 -->
+                                    <!-- product 2 -->
+                                    <li>
+                                        <span class="discount">-30%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-5/img-2/black/1.jpg" alt="áo thun nam chất lượng cao mang thương hiệu quốc tế">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-5/img-2/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-2/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-2/gray/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-2/gray/2.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 2 -->
+                                    <!-- product 3 -->
+                                    <li>
+                                        <span class="discount">-40%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-5/img-3/blue/1.jpg" alt="áo khoát chống mưa, nắng, gió">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-5/img-3/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-3/pink/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-3/pink/2.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-3/pink/3.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 3 -->
+                                    <!-- product 4 -->
+                                    <li>
+                                        <span class="discount">-50%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-5/img-4/blue/1.jpg" alt="áo dạ hội hàng tốt chất lượng">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-5/img-4/blue/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-4/gray/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-4/pink/1.jpg" alt=""></li>
+                                                <li><img src="images/product-5/img-4/yellow/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 4 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end widget product 5 -->
+                        <!-- widget product 6 -->
+                        <div class="widget product">
+                            <div class="widget-head">
+                                <h2>Nón thời trang</h2>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-product clearfix">
+                                    <!-- product 1 -->
+                                    <li>
+                                        <span class="discount">-20%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-6/img-1/black/1.jpg" alt="áo thun nam nhập khẩu từ hàn quốc">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-6/img-1/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-1/black/2.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-1/black/3.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-1/black/3.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 1 -->
+                                    <!-- product 2 -->
+                                    <li>
+                                        <span class="discount">-30%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-6/img-2/white/1.jpg" alt="áo thun nam chất lượng cao mang thương hiệu quốc tế">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-6/img-2/white/1.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-2/white/2.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-2/white/3.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-2/white/4.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 2 -->
+                                    <!-- product 3 -->
+                                    <li>
+                                        <span class="discount">-40%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-6/img-3/red/1.jpg" alt="áo thun 3 lỗ (áo lót) nam bộ 3 áo trong một sản phẩm">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-6/img-3/red/1.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-3/red/2.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-3/red/3.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-3/red/3.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 3 -->
+                                    <!-- product 4 -->
+                                    <li>
+                                        <span class="discount">-50%</span>
+                                        <a href="detail-product.html">
+                                        <img src="images/product-6/img-4/black/1.jpg" alt="áo sơ mi nam dạ hội, giá rẽ bất ngờ">
+                                        </a>
+                                        <span class="add-to-cart" title="thêm vào giỏ hàng">
+                                            <i class="fa fa-cart-plus icon-add-to-cart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="hide-1">
+                                            <p class="new-price">150.000 đ</p>
+                                            <p class="old-price">300.000 đ</p>
+                                        </div>
+                                        <div class="hide-2">
+                                            <ul class="list-thumb">
+                                                <li><img src="images/product-6/img-4/black/1.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-4/black/2.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-4/black/3.jpg" alt=""></li>
+                                                <li><img src="images/product-6/img-4/white/1.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end product 4 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end widget product 6 -->
+                    </div>
+                    <!-- end all product -->
+        </div>
+        <!-- end orthers -->
+                </div>
+            </div>
+            <!-- end wp-content -->
+        </div>
+        <!-- end wp-content -->
+
+        <!-- btn back top -->
+        <div id="back-top">
+            <a href="#" class="fa fa-chevron-up icon-scroll"></a>
+        </div>
+        <!-- end btn back top -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="wp-inner clearfix">
+                <div class="about-us fl-left">
+                    <h2>Giới thiệu</h2>
+                    <p><span>đình hùng</span> shop quần áo bán
+                    và giao hàng chất lượng nhất Việt Nam</p>
+                    <p>Giử phản hồi !</p>
+                </div>
+                <div class="contact fl-left">
+                    <h2>liên hệ</h2>
+                    <ul class="list-contact">
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span class="phone-ct">038.5763.717</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="email-ct">phamdinhhung212@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-address-card-o"></i>
+                            <span class="address-ct">195/17 vườn lài - phú thọ hòa - tân phú - TP HCM</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook"></i>
+                            <span class="facebook-ct">https://www.facebook.com/0pham7dinh1hung1</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information fl-left">
+                    <h2>Thông tin nổi bậc</h2>
+                    <p>Ngày <span class="highlight">25 - 01 - 2020</span> là tết Âm Lịch</p>
+                    <p>Ngày <span class="highlight">23 - 12 - 2019</span> sẽ ưu đãi cho 150 khách hàng đầu tiên bấm<span class="highlight"> Đăng Ký</span> ngay để nhận ưu đãi</p>
+                </div>
+                <div class="sign-up-member fl-right">
+                    <h2>Đăng ký</h2>
+                    <form action="sign-up" class="form-sign-up">
+                        <input type="text" name="username" id="username" placeholder="Enter your username">
+                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                        <input type="password" name="password" id="password" placeholder="Enter again your password">
+                        <button type="submit" name="sign-up" class="btn-sign-up">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <div id="copy-right">
+            <p>@ bản quyền thuộc về shop quần áo của phạm đinh hùng</p>
+        </div>
+    </div>
+</body>
+</html>

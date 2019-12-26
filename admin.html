@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>admin</title>
+	<link rel="stylesheet" href="css/style-login.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- header -->
+		<div id="header">
+			<div class="wp-inner clearfix">
+				<a href="#" class="logo fl-left">
+					<img src="images/logo/logomain.png" alt="logo" title="logo">
+				</a>
+				<ul id="main-menu" class="fl-left">
+					<li><a href="home.html">
+						<span>trang chủ</span>
+					</a></li>
+					<li><a href="">
+						<span>sản phẩm</span>
+					</a></li>
+					<li><a href="">
+						<span>liên hệ</span>
+					</a></li>
+					<li><a href="">
+						<span>tài khoảng</span>
+					</a></li>
+					<li><a href="admin.html">
+						<span>admin</span>
+					</a></li>
+				</ul>
+				<form action="search" class="search-box fl-left">
+					<span class="icon-search fa fa-search" title="Tìm kiếm"></span>
+					<input type="text" name="search" class="search-text" placeholder="Tìm kiếm">
+					<input type="submit" value=" " name="search" class="sm-search">
+				</form>
+				<!-- basket -->
+				<div class="basket-box fl-right">
+					<span class="basket-product clearfix" title="giỏ hàng">
+						<i class="fa fa-shopping-basket icon-basket fl-left" aria-hidden="true"></i>
+						<span class="cart-cout fl-right" title="0">0</span>
+					</span>
+				</div>
+				<!-- end basket -->
+			</div>
+		</div>
+		<!-- end header -->
+		<!-- wp-content -->
+		<div id="wp-content">
+			<div class="wp-inner">
+				<div class="admin">
+					<h2>Đăng nhập admin</h2>
+					<form action="login" id="form-login">
+						<input type="text" name="name" id="name" placeholder="Enter your name">
+						<input type="text" name="username" id="username" placeholder="Enter your username" value="">
+						<input type="password" name="password" id="password" placeholder="Enter your password" value="">
+						<input type="submit" value="login" name="login" class="sm-login">
+					</form>
+				</div>
+				<div id="personal-page">
+					<span class="close-login" title="Đóng">
+						<i class="fa fa-times-circle icon-close" aria-hidden="true"></i>
+					</span>
+					<div class="information-admin">
+						<h2 class="title-admin">xin chào <span class="admin-name"></span></h2>
+						<p>Admin of <a href="http://localhost/slider-20-12-PDH/home.html">phamdinhhungshop.com</a></p>
+						<div class="content-admin">
+							<div class="information-personal">
+								<p>name: phạm đình hùng</p>
+								<p>birthtday: 28 - 20 - 2001</p>
+								<p>user: phamdinhhung@gmail.com</p>
+								<p>password: gnuh20011028</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end wp-content -->
+		<!-- footer -->
+		<div id="footer">
+			<div class="wp-inner clearfix">
+				<div class="about-us fl-left">
+					<h2>Giới thiệu</h2>
+					<p><span>đình hùng</span> shop quần áo bán
+					và giao hàng chất lượng nhất Việt Nam</p>
+					<p>Giử phản hồi !</p>
+				</div>
+				<div class="contact fl-left">
+					<h2>liên hệ</h2>
+					<ul class="list-contact">
+						<li>
+							<i class="fa fa-phone"></i>
+							<span class="phone-ct">038.5763.717</span>
+						</li>
+						<li>
+							<i class="fa fa-envelope-o"></i>
+							<span class="email-ct">phamdinhhung212@gmail.com</span>
+						</li>
+						<li>
+							<i class="fa fa-address-card-o"></i>
+							<span class="address-ct">195/17 vườn lài - phú thọ hòa - tân phú - TP HCM</span>
+						</li>
+						<li>
+							<i class="fa fa-facebook"></i>
+							<span class="facebook-ct">https://www.facebook.com/0pham7dinh1hung1</span>
+						</li>
+					</ul>
+				</div>
+				<div class="information fl-left">
+					<h2>Thông tin nổi bậc</h2>
+					<p>Ngày <span class="highlight">25 - 01 - 2020</span> là tết Âm Lịch</p>
+					<p>Ngày <span class="highlight">23 - 12 - 2019</span> sẽ ưu đãi cho 150 khách hàng đầu tiên<span class="highlight"> Đăng Ký</span> ngay để nhận ưu đãi</p>
+				</div>
+				<div class="sign-up-member fl-right">
+					<h2>Đăng ký</h2>
+					<form action="sign-up" class="form-sign-up">
+						<input type="text" name="username" id="username" placeholder="Enter your username">
+						<input type="password" name="password" id="password" placeholder="Enter your password">
+						<input type="password" name="password" id="password" placeholder="Enter again your password">
+						<button type="submit" name="sign-up" class="btn-sign-up">Sign Up</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+
+</body>
+</html>
